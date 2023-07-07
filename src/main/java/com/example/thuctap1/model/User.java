@@ -10,18 +10,18 @@ public class User {
     private long id;
     @Column(name = "name")
     private String name;
-    @Column(name = "date")
-    private int  date;
+    @Column(name = "age")
+    private int  age;
     @Column(name = "address")
     private String address;
 
     public User() {
     }
 
-    public User(long id, String name, int date, String address) {
+    public User(long id, String name, int age, String address) {
         this.id = id;
         this.name = name;
-        this.date = date;
+        this.age = age;
         this.address = address;
     }
 
@@ -41,12 +41,12 @@ public class User {
         this.name = name;
     }
 
-    public int getDate() {
-        return date;
+    public int getAge() {
+        return age;
     }
 
-    public void setDate(int date) {
-        this.date = date;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getAddress() {

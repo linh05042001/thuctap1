@@ -25,7 +25,7 @@ public class UserImplement implements UserService{
             User us=userRepository.getById(id);
             if(us!=null){
                 us.setName(user.getName());
-                us.setDate(user.getDate());
+                us.setAge(user.getAge());
                 us.setAddress(user.getAddress());
                 return userRepository.save(us);
             }
